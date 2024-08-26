@@ -43,7 +43,7 @@ btnEncriptar.addEventListener('click', () => {
 btnDesencriptar.addEventListener('click', () => {
     const texto = textArea.value;
     if (validarTexto(texto)) {
-        
+        contenido1.remove();
         AreaResultado.value = desencriptar(texto);
         textArea.value = '';
     } else {

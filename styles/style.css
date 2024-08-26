@@ -1,25 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
 
 :root{
-    --colorintermedio:#E8E8E8;
-
     --fuenteblinker:"Blinker", sans-serif;
-     /* Dark Blue for main elements */
-    --color-secundario: #5DA3FA; /* Light Blue for emphasis */
-    --color-accento: #f7d296; /*#69e8ff   Yellow for buttons or highlights */
-    --color-texto: #FFFFFF; /* White for text */
-    --color-fondo: #E8E8E8; /* Light gray for backgrounds */
-    --color-boton-hover: #3B8FC2; /* Medium Blue for button hover state */
-    --color-rojonaranja: #ffac3f; /* #FF6961  Red for validation or alerts */
-    --color-grisboton: #484545; /* Light Gray for placeholder text */
+    --color-fondo: #E8E8E8; 
+    --color-panel: #ffac3f; /* antes: #FF6961  Red */
+    --color-grisboton: #484545; 
 }
 
 *{
     margin: 0;
     padding:0;
-    
     font-family: var(--fuenteblinker);
-    
     text-decoration: none;
 }
 
@@ -46,7 +37,7 @@ header .logo_alura {
     
 }
 
-/* Contenedor p*/
+/* Contenedo*/
 .fondo {
     padding: 6% 20%;
     padding-top: 0%;
@@ -63,7 +54,7 @@ header .logo_alura {
     padding-bottom: 1%;
     display: flex;
     align-items: center;  
-    background-color: var(--color-rojonaranja);   
+    background-color: var(--color-panel);   
     border-radius: 25px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
     max-width: 720px;
@@ -80,20 +71,19 @@ header .logo_alura {
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
-    background-color: var(--color-rojonaranja);
+    background-color: var(--color-panel);
     visibility: transparent;
     border-radius: 25px;
     
 }
 
-
-
+/* titulo */
 
 h1 {
     font-size: 1.5rem;
-    color: var(--color-texto);
+    color: var(--color-fondo);
     padding-bottom: 12px;
-    background-color: var(--color-rojonaranja);
+    background-color: var(--color-panel);
     
 }
 
@@ -119,7 +109,7 @@ textarea.encriptar {
 
 /* Aviso de validación */
 .aviso_de_validador {
-    background-color: var(--color-rojonaranja);
+    background-color: var(--color-panel);
     display: flex;
     align-items: center;
     
@@ -130,22 +120,21 @@ textarea.encriptar {
     
 }
 .texto_aviso{
-    background-color: var(--color-rojonaranja);
+    background-color: var(--color-panel);
 }
 
 .img_aviso {
     width: 20px;
     margin-right: 4px;
-    background-color: var(--color-rojonaranja);
+    background-color: var(--color-panel);
 }
 
-/* Botones de encriptar y desencriptar */
 .encriptador_contenido {
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: var(--color-rojonaranja);
+    background-color: var(--color-panel);
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -184,15 +173,13 @@ textarea.encriptar {
     color: var(--color-grisboton);
 }
 
-/* Tarjeta de mensaje */
-
 .tarjeta{
     
     padding-top: 10px;
     display: flex;
     align-items: center;
     
-    background-color: var(--color-rojonaranja);
+    background-color: var(--color-panel);
     flex-direction: column;
     
     max-width: 800%;
@@ -202,7 +189,7 @@ textarea.encriptar {
     position: relative;
 }
 .tarjeta_contenido {
-    background-color: var(--color-rojonaranja);
+    background-color: var(--color-panel);
     border-radius: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -245,18 +232,17 @@ textarea.encriptar {
     font-weight: bold;
     padding-bottom: 10px;
     font-size: 1.125rem;
-    color: var(--color-rojonaranja);
+    color: var(--color-panel);
     background-color: var(--color-fondo);
 }
 
 .texto_dos {
     font-size: 0.875rem;
-    color: var(--color-rojonaranja);
+    color: var(--color-panel);
     background-color: var(--color-fondo);
     padding-bottom: 10px;
 }
 
-/* Botón copiar */
 .btn_copiar {
     background-color: var(--color-fondo);
     color: var(--color-grisboton);
@@ -272,8 +258,8 @@ textarea.encriptar {
 
 
 footer{
-    color:var(--color-rojonaranja);
-    background-color: var(--colorintermedio);
+    color:var(--color-panel);
+    background-color: var(--color-fondo);
     padding: 14px;
     text-align: center;
     font-family: var(--fuenteblinker);
@@ -289,7 +275,7 @@ footer{
 }
 
 .copyR,.linkedin,.github, a{
-    background-color: var(--colorintermedio);
+    background-color: var(--color-fondo);
 }
 
 .linkedin, .github{
@@ -326,7 +312,6 @@ footer{
     }
 }
 
-/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .fondo {
         padding: 6% 10%;
@@ -363,8 +348,20 @@ footer{
         box-sizing: border-box;
     }
 
-    .img_muñeco {
-        
+    .a-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+    .logo_alura{
+        max-width: 100%;
+        height: auto;
+        background: transparent;
+    }
+    .img_muñeco {        
         margin-bottom: 10px;
     }
     .tarjeta_contenido{
