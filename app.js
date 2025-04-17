@@ -55,7 +55,7 @@ btnDesencriptar.addEventListener('click', () => {
 btnCopiar.addEventListener('click', () => {
     navigator.clipboard.writeText(AreaResultado.value);
 });
-
+//prueba
 
 function validarTexto(texto) {
     const regex = /^[a-z\s]+$/; 
